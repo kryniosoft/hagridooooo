@@ -1,0 +1,69 @@
+<html>
+<head>
+  <title> Okroj 2P</title>
+  <script language="JavaScript">
+    function windowManager(method, windowName) {
+      if (method == "open") {
+        switch (windowName) {
+          case "zad1":
+            window.open("zadania/z1.html", "zad1", "toolbar=no,directories=no,menubar=no,height=380,width=480,top=200,left=200");
+            break;
+          case "zad2":
+            window.open("zadania/zad2/zad2.html", "zad2", "toolbar=no,directories=no,menubar=no,height=380,width=480,top=200,left=200");
+            break;
+          case "zad3":
+            window.open("zadania/zad3/zad3.html", "zad3", "toolbar=no,directories=no,menubar=no,height=380,width=480,top=200,left=200");
+            break;
+          case "zad4":
+            window.open("zadania/zad4/zad4.html", "zad4", "toolbar=no,directories=no,menubar=no,height=380,width=720,top=200,left=200");
+            break;
+          case "zad5":
+            window.open("zadania/zad5/zad5.html", "zad5", "toolbar=no,directories=no,menubar=no,height=380,width=720,top=720,left=550");
+            break;
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #1c1c1c;
+    }
+    input[type=button] {
+      background-color: #1c1c1c;
+      color: #ffffff;
+      border: 1px solid #ffffff;
+      border-radius: 5px;
+      padding: 5px;
+      margin: 5px;
+
+        transition: 200ms ease-in-out;
+    }
+    input[type=button]:hover {
+      background-color: #ffffff20;
+      color: #ffffff;
+      border: 1px solid #ffffff;
+      border-radius: 5px;
+      padding: 5px;
+      margin: 5px;
+    }
+    input[type=button]:active {
+        background-color: #ffffff50;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        border-radius: 5px;
+        padding: 5px;
+        margin: 5px;
+    }
+  </style>
+</head>
+<body>
+<form>
+  <p style="color: red; font-size: 2cm">Szkielet zaliczeniowy Nikodem Okroj klasa 2P</p>
+  <input type="button" onclick="windowManager('open', 'zad1')" value="Zadanie 1">
+  <input type="button" onclick="windowManager('open', 'zad2')" value="Zadanie 2">
+  <input type="button" onclick="windowManager('open', 'zad3')" value="Zadanie 3">
+  <input type="button" onclick="windowManager('open', 'zad4')" value="Zadanie 4">
+  <input type="button" onclick="windowManager('open', 'zad5')" value="Zadanie 5">
+</form>
+</body>
+</html>

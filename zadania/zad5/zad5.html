@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>zad 5 - Nikodem Okroj</title>
+  <script>
+    function okno1() {
+      window.open("obraz1.html","obraz1","toolbar=no,directories=no,menubar=no,height=300,width=210,top=500,left=100");
+    }
+    function okno2() {
+      window.open("obraz2.html","obraz2","toolbar=no,directories=no,menubar=no,height=300,width=210,top=375,left=450");
+    }
+
+    function okno3() {
+      window.open("obraz3.html","obraz3","toolbar=no,directories=no,menubar=no,height=300,width=210,top=250,left=675");
+    }
+
+    function okno4() {
+      window.open("obraz4.html","obraz4","toolbar=no,directories=no,menubar=no,height=300,width=210,top=150,left=900");
+    }
+  </script>
+  <style>
+      body {
+          background-color: #1c1c1c;
+      }
+      input[type=button] {
+          background-color: #1c1c1c;
+          color: #ffffff;
+          border: 1px solid #ffffff;
+          border-radius: 5px;
+          padding: 5px;
+          margin: 5px;
+
+          transition: 200ms ease-in-out;
+      }
+      input[type=button]:hover {
+          background-color: #ffffff20;
+          color: #ffffff;
+          border: 1px solid #ffffff;
+          border-radius: 5px;
+          padding: 5px;
+          margin: 5px;
+      }
+      input[type=button]:active {
+          background-color: #ffffff50;
+          color: #ffffff;
+          border: 1px solid #ffffff;
+          border-radius: 5px;
+          padding: 5px;
+          margin: 5px;
+      }
+  </style>
+</head>
+<body>
+  <div>
+    <h1 style="color: red">Wykonał: Nikodem Okroj, klasa 1P gr 2, nr w dzienniku 23; 23 mod 4 = 3</h1>
+    <button onclick="okno1()">obraz 1</button>
+    <button onclick="okno2()">obraz 2</button>
+    <button onclick="okno3()">obraz 3</button>
+    <button onclick="okno4()">obraz 4</button>
+  </div>
+</body>
+</html>
